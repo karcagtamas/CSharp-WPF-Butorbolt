@@ -1,0 +1,16 @@
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\bin\Debug\2019-01-03_Butorbolt.exe.config
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\bin\Debug\2019-01-03_Butorbolt.exe
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\bin\Debug\2019-01-03_Butorbolt.pdb
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\bin\Debug\MySql.Data.dll
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.csprojResolveAssemblyReference.cache
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\MainWindow.g.cs
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\App.g.cs
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt_Content.g.cs
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt_MarkupCompile.cache
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt_MarkupCompile.lref
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\MainWindow.baml
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.g.resources
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\_2019_01_03_Butorbolt.Properties.Resources.resources
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.csproj.GenerateResource.Cache
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.exe
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.pdb
