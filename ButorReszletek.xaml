@@ -1,0 +1,40 @@
+﻿<Window x:Class="_2019_01_03_Butorbolt.ButorReszletek"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2019_01_03_Butorbolt"
+        mc:Ignorable="d"
+        Title="Butorok Adatai" Height="400" Width="600" FontSize="16">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Megnevezés:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
+        <Label Grid.Row="1" Content="Alapanyag:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
+        <Label Grid.Row="2" Content="Szállítás:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
+        <Label Grid.Row="3" Content="Ár:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
+        <Label Grid.Row="4" Content="Szín:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
+
+        <TextBox x:Name="txtMegnevezes" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Width="200" Margin="5 0 0 0"/>
+        <ComboBox x:Name="cboAlapanyag" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Width="200" Margin="5 0 0 0"/>
+        <DatePicker x:Name="dpSzallitas" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Width="200" Margin="5 0 0 0"/>
+        <TextBox x:Name="txtAr" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Width="200" Margin="5 0 0 0"/>
+        <TextBox x:Name="txtSzin" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Width="200" Margin="5 0 0 0"/>
+        <StackPanel Grid.Row="5" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button x:Name="btnOk" Content="OK" Width="120" Height="25" Margin="20 0 20 0" Click="btnOk_Click"/>
+            <Button x:Name="btnMegsem" Content="Mégsem" Width="120" Height="25" Margin="20 0 20 0" Click="btnMegsem_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

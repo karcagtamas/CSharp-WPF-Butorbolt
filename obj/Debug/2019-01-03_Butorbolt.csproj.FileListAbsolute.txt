@@ -14,3 +14,5 @@ D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\_2019_01_03_Butorbolt.Prop
 D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.csproj.GenerateResource.Cache
 D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.exe
 D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\2019-01-03_Butorbolt.pdb
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\ButorReszletek.g.cs
+D:\Karcag_Tamás_5_13A\2019-01-03_Butorbolt\obj\Debug\ButorReszletek.baml

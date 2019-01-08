@@ -30,5 +30,17 @@
                 <Button x:Name="btnKeres" Content="Keresés" Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" Height="30" Width="150" Click="btnKeres_Click"/>
             </Grid>
         </GroupBox>
+        <DataGrid x:Name="dgLista" ItemsSource="{ Binding }" IsReadOnly="True" AutoGenerateColumns="False" Grid.Row="1" Margin="5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Megnevezés" Width="*" Binding="{ Binding Megnevezes }"/>
+                <DataGridTextColumn Header="Alapanyag" Width="*" Binding="{Binding AlapanyagNev}"/>
+                <DataGridTextColumn Header="Szín" Width="*" Binding="{Binding Szin}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button x:Name="btnUj" Content="Új" Width="120" Height="25" Margin="20 0 20 0" Click="btnUj_Click"/>
+            <Button x:Name="btnModosit" Content="Modosítás" Width="120" Height="25" Margin="20 0 20 0" Click="btnModosit_Click"/>
+            <Button x:Name="btnTorles" Content="Törlés" Width="120" Height="25" Margin="20 0 20 0" Click="btnTorles_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

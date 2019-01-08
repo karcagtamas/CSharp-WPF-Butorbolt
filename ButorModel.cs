@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _2019_01_03_Butorbolt
 {
-    class ButorModel
+    public class ButorModel
     {
         public int Id { get; set; }
         public string Megnevezes { get; set; }
@@ -54,6 +54,58 @@ namespace _2019_01_03_Butorbolt
                 }
             }
             return list;
+        }
+
+        public static void Delete(ButorModel butor)
+        {
+            using (var con = new MySqlConnection(conStr))
+            {
+                con.Open();
+                var sql = "DELETE FROM butor WHERE id = @id";
+                using (var cmd = new MySqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@id", butor.Id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static int Insert(ButorModel model)
+        {
+            using (var con = new MySqlConnection(conStr))
+            {
+                con.Open();
+                var sql = "INSERT INTO butor(megnevezes, alapanyag, ar, szin, szallitas) VALUES (@megnevezes, @alapanyag, @ar, @szin, @szallitas)";
+                using (var cmd = new MySqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@megnevezes", model.Megnevezes);
+                    cmd.Parameters.AddWithValue("@alapanyag", model.Alapanyag);
+                    cmd.Parameters.AddWithValue("@szin", model.Szin);
+                    cmd.Parameters.AddWithValue("@szallitas", model.Szallitas);
+                    cmd.Parameters.AddWithValue("@ar", model.Ar);
+                    cmd.ExecuteNonQuery();
+                    return (int)cmd.LastInsertedId;
+                }
+            }
+        }
+
+        public static void Update(ButorModel model)
+        {
+            using (var con = new MySqlConnection(conStr))
+            {
+                con.Open();
+                var sql = "UPDATE butor SET megnevezes = @megnevezes, alapanyag = @alapanyag, szin = @szin, ar = @ar, szallitas = @szallitas WHERE id = @id";
+                using (var cmd = new MySqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@megnevezes", model.Megnevezes);
+                    cmd.Parameters.AddWithValue("@alapanyag", model.Alapanyag);
+                    cmd.Parameters.AddWithValue("@szin", model.Szin);
+                    cmd.Parameters.AddWithValue("@szallitas", model.Szallitas);
+                    cmd.Parameters.AddWithValue("@ar", model.Ar);
+                    cmd.Parameters.AddWithValue("@id", model.Id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
     }
 }
